@@ -2,22 +2,35 @@
     <v-container>
         <v-row class="pl-12 pr-12 pt-5" justify="center" align="center">
 
-            <!--<MapChileSvg/>-->
-
+            <!--CHILE MAP-->
             <v-col cols="12">
-                <v-progress-linear
-                    striped
-                    color="indigo"
-                    value="68"
-                    height="35"
-                ></v-progress-linear>
+                <v-img  height="300" :src="mapaChile"></v-img>
             </v-col>
 
+            <!--TABLES-->
+            <v-col cols="6" class="pb-12">
+                <v-data-table
+                    hide-default-header
+                    :items="regionesMapa"
+                    :headers="headers"
+                    items-per-page="5">
+                </v-data-table>
+            </v-col>
 
+            <v-col cols="6" class="pb-12">
+                <v-data-table
+                    hide-default-header
+                    :items="regionesMapa"
+                    :headers="headers"
+                    items-per-page="5">
+                </v-data-table>
+            </v-col>
+
+            <!--
             <v-col cols="12" class="pb-12">
                 <v-card height="315">
                     <v-row>
-                        <!--TABLE-->
+                        
                         <v-col cols="6">
                             <v-data-table
                                 hide-default-header
@@ -27,13 +40,14 @@
                             </v-data-table>
                         </v-col>
 
-                        <!--MAPA-->
+                        
                         <v-col cols="6">
                             <v-img :src="mapaChile"></v-img>
                         </v-col>
                     </v-row>
                 </v-card>
             </v-col>
+            -->
 
             <!--CHARTS-->
             <v-col v-for="item in chartData" :key="item.name" cols="4">
@@ -62,7 +76,7 @@
             </v-col>
 
             <!--TOTAL BOX-->
-            <v-col class="pt-10 pl-6 pr-6" cols="3" v-for="item in totalBox" :key="item.name">
+            <v-col class="pt-10 pl-6 pr-6 pb-12" cols="3" v-for="item in totalBox" :key="item.name">
                 <v-card class="mt-4 mx-auto" :color="item.color">
                     <v-card-title class="pt-3">
                         <v-flex xs6>
