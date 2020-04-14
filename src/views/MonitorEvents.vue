@@ -5,7 +5,7 @@
                 <v-card>
 
                     <!--TOOLBAR-->
-                    <v-toolbar color="#26293C" dark>
+                    <v-toolbar color="#10163a" dark>
                         <v-toolbar-title class="'info_device''eadline">
                             <v-icon>tv</v-icon> Monitor Eventos
                         </v-toolbar-title>
@@ -54,7 +54,6 @@
 
                     <!--TABLE-->
                     <v-data-table
-                        dark
                         v-model="selected"
                         show-select
                         single-select

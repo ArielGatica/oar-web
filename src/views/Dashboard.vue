@@ -111,7 +111,7 @@
             MapChileSvg
         },
         data: () => ({
-            mapaChile: require('../assets/mapaChile2.png'),
+            mapaChile: require('../assets/mapaChileHorizontal.png'),
             chartData:[
                 {
                     labels: ["Lun", "Mar", "Mier", "Jue", "Vie", "Sab", "Dom"],

@@ -14,7 +14,7 @@
                     {{ message }}
                 </v-alert>
 
-                <v-card class="elevation-8" color="#26293C">
+                <v-card class="elevation-8" color="#10163a">
                     <br>
                     <v-img
                         id="logoEntel"
